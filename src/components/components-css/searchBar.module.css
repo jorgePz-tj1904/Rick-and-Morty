@@ -1,0 +1,22 @@
+.bar input{
+    margin-top: 18px;
+    font-size: 20px;
+    padding: 5px;
+    border: black;
+    border-radius: 10px;
+}
+.bar button{
+    font-size: 30px;
+    background-color: rgb(35, 77, 35);
+    border-radius: 40%;
+    box-shadow: -1px 0px 11px 4px rgba(119,255,53,1) inset;
+-webkit-box-shadow: -1px 0px 11px 4px rgba(119,255,53,1) inset;
+-moz-box-shadow: -1px 0px 11px 4px rgba(119,255,53,1) inset;
+    transition: .3s;
+}
+.bar button:hover{
+    background-color: rgb(119,255,53,1);
+    box-shadow: -1px 0px 11px 4px rgb(35, 77, 35) inset;
+-webkit-box-shadow: -1px 0px 11px 4px rgb(35, 77, 35) inset;
+-moz-box-shadow: -1px 0px 11px 4px rgb(35, 77, 35) inset;
+}

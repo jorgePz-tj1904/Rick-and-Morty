@@ -1,0 +1,7 @@
+.nav{
+    background-color: rgb(182, 182, 182);
+    height: 70px;
+    box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
+-webkit-box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
+-moz-box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
+}
