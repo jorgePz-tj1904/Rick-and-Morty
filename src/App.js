@@ -3,6 +3,9 @@ import Cards from './components/Cards.jsx';
 import Nav from './components/Nav';
 import { useState } from 'react';
 import axios from 'axios';
+import { Route, Routes } from 'react-router-dom';
+import About from './components/About';
+import Detail from './components/Detail';
 
 const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
 const KEY = 'f13647e1f1d7.e0e2622df60977cc36b4';
@@ -34,7 +37,11 @@ const onClose=(id)=>{
    return (
       <div className='App'>
          <Nav onSearch={onSearch}/>
-         <Cards characters={characters} onClose={onClose}/>
+         <Routes>
+            <Route path='/home' element={<Cards characters={characters} onClose={onClose}/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/detail/:id' element={<Detail/>}/> 
+         </Routes>
       </div>
    );
 }

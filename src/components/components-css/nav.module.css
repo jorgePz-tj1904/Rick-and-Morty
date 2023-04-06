@@ -4,4 +4,39 @@
     box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
 -webkit-box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
 -moz-box-shadow: -1px 30px 88px -4px rgba(0,0,0,1);
+box-shadow: 0px 0px 31px 4px rgba(0,0,0,0.76) inset;
+-webkit-box-shadow: 0px 0px 31px 4px rgba(0,0,0,0.76) inset;
+-moz-box-shadow: 0px 0px 31px 4px rgba(0,0,0,0.76) inset;
+}
+
+.NavLink{
+    font-size: 20px;
+    border: 3px solid rgb(35, 77, 35);
+    color: black;
+    padding-left: 30px;
+    padding-right: 30px;
+    padding-bottom: 20px;
+    background-color: rgb(119,255,53);
+    color: black;
+    text-decoration: none;
+    border-bottom-left-radius: 50%;
+    border-bottom-right-radius: 50%;
+    box-shadow: 0px -3px 9px 13px rgba(58,99,58,0.75) inset;
+-webkit-box-shadow: 0px -3px 9px 13px rgba(58,99,58,0.75) inset;
+-moz-box-shadow: 0px -3px 9px 13px rgba(58,99,58,0.75) inset;
+    transition: .3s;
+}
+.NavLink:hover{
+    box-shadow: 0px -3px 9px 13px rgb(119,255,53) inset;
+-webkit-box-shadow: 0px -3px 9px 13px rgb(119,255,53) inset;
+-moz-box-shadow: 0px -3px 9px 13px rgb(119,255,53) inset; 
+    background-color: rgba(58,99,58,0.75);
+}
+#home{
+    margin-left: 20px;
+    float: left;
+}
+#about{
+    margin-right: 20px;
+    float: right;
 }
