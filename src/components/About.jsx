@@ -4,7 +4,7 @@ const About=()=>{
     return(
         <div className={style.container}>
          <h1 className={style.id}>Autor:</h1>
-         <h2>Jorge Perez</h2>
+         <h2 id={style.autor}>Jorge Perez</h2>
          <ul>
          <li>State: alive</li>
          <li>Species: programer</li>
