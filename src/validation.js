@@ -12,7 +12,7 @@ const validation =(userData)=>{
     if(!/.*\d+.*/.test(userData.password)){
         errors.password ='debe tener al menos un numero';
     }
-    if(userData.password.length < 6 || userData.password.length > 10){
+    if(userData.password.length < 6 || userData.password.length > 15){
         errors.password='la contra debe tener al menos 6 caracteres y como maximo 10'
     }
     return errors;

@@ -12,7 +12,7 @@ const URL_BASE = 'https://be-a-rym.up.railway.app/api/character';
 const KEY = 'f13647e1f1d7.e0e2622df60977cc36b4';
 const email = 'jlgames1904@gmail.com'
 const password= 'mariela1904'
-
+let count;
 
 function App() {
    const navigate = useNavigate();
@@ -31,6 +31,7 @@ function App() {
    useEffect(()=>{
       !access && navigate('/');
    },[access])
+
    const onSearch = (id) => {
       if(characters.find((char)=> char.id == id)){
         return alert('ya esta ese mostro...');
@@ -43,8 +44,6 @@ function App() {
             alert('No hay personajes con este ID');
           }
         });
-  
-
 }
 const onClose=(id)=>{
    const charactersFiltered = characters.filter(characters=> characters.id !== id)

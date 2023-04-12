@@ -4,16 +4,58 @@ body{
 }
 .container{
     font-size: 13px;
-    background-color: rgb(224, 224, 224);
     width: 370px;
     display: inline-block;
-    margin: 20px;
+}
+#back{
+    margin-left: -20px;
+    max-width: 350px;
+    border: 3px solid gray;
     margin-top: 50px;
-    border: 3px solid  gray;
+    background-color: rgb(224, 224, 224);
+    transform: perspective(600px) rotateY(180deg);
+    order: 3px solid  gray;
     box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
 -webkit-box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
 -moz-box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
 }
+#front, #back{
+    position: absolute;
+    overflow: hidden;
+    backface-visibility: hidden;
+    transition: .8s;
+}
+#front{
+    width: 300px;
+    height: 500px;
+    margin-top: 100px;
+    justify-content: center;
+    text-align: center;
+    border: 5px solid gray;
+    transform: perspective(600px) rotateY(0deg);
+    box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
+-webkit-box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
+-moz-box-shadow: 0px 0px 31px 28px rgba(0,0,0,0.76);
+}
+#front img{ 
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+#front h1{
+    font-size: 40px;
+    margin-top: -100px;
+    color: white;
+}
+.cards:hover #front{
+    transform: perspective(600px) rotateY(180deg);
+}
+.cards:hover #back{
+    transform: perspective(600px) rotateY(360deg);
+}
+/*ACA TERMINAN LAS CARTAS*/
+
+
 #xboton{
     background-color: rgb(248, 123, 123);
     float: right;
@@ -25,9 +67,9 @@ body{
     cursor: pointer;
     background-color: red;
 }
-.container img{
+#characterImg{
     margin-top: 20px;
-    margin-bottom: 20px;
+    margin: 10px;
     border: 4px solid rgb(88, 88, 88);
     box-shadow: 0px 1px 16px 9px rgba(129,129,129,1) ;
 -webkit-box-shadow: 0px 1px 16px 9px rgba(129,129,129,1) ;
@@ -46,7 +88,7 @@ body{
 -moz-box-shadow: 0px 0px 7px 5px rgba(243,193,42,0.76) inset;
     position: absolute;
     margin-left: 130px;
-    margin-top: -11px;
+    margin-top: -20px;
     width: 50px;
     color: black;
     text-decoration: none;
@@ -80,8 +122,4 @@ body{
     box-shadow: 0px 0px 11px 4px rgb(35, 77, 35) inset;
 -webkit-box-shadow: 0px 0px 11px 4px rgb(35, 77, 35) inset;
 -moz-box-shadow: 0px 0px 11px 4px rgb(35, 77, 35) inset;
-}
-.fase{
-    position: absolute;
-    width: 370px;
 }

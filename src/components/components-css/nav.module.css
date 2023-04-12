@@ -1,9 +1,10 @@
 .nav{
     background-color: rgb(182, 182, 182);
     height: 70px;
-    box-shadow: -1px 7px 80px 26px rgba(0,0,0,0.75);
--webkit-box-shadow: -1px 7px 80px 26px rgba(0,0,0,0.75);
--moz-box-shadow: -1px 7px 80px 26px rgba(0,0,0,0.75);
+    border-bottom: 6px solid gray;
+    box-shadow: -1px 7px 80px 40px rgba(0,0,0,0.75);
+-webkit-box-shadow: -1px 7px 80px 40px rgba(0,0,0,0.75);
+-moz-box-shadow: -1px 7px 80px 40px rgba(0,0,0,0.75);
 }
 
 .NavLink{
