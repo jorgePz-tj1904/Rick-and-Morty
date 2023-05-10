@@ -36,7 +36,7 @@ function App() {
       if(characters.find((char)=> char.id == id)){
         return alert('ya esta ese mostro...');
       }
-      axios(`${URL_BASE}/${id}?key=${KEY}`)
+      axios(`https://rickandmortyapi.com/api/character/${id}`)
         .then(({ data }) => {
           if (data.name) {
             setCharacters((oldChars) => [...oldChars, data]);

@@ -22,13 +22,17 @@ const Detail=()=>{
      }, [id]);
     return(
         <div className={style.container}>
-            <h1>Name: {character?.name}</h1>
+            <div className={style.info}>
+            <h1>{character?.name}</h1>
+            <ul>
+                <li>Status: {character?.status}</li>
+                <li>Species: {character?.species}</li>
+                <li>Gender: {character?.gender}</li>
+                <li>Origin: {character?.origin?.name}</li>
+            </ul>
             <h2 >{character?.id}</h2>
-            <h2>Status: {character?.status}</h2>
-            <h2>Species: {character?.species}</h2>
-            <h2>Gender: {character?.gender}</h2>
-            <h2>Origin: {character?.origin?.name}</h2>
-            <img src={character?.image}/>
+        </div>
+        <img src={character?.image}/>
         </div>
     )
 }
